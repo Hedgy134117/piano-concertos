@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Concertos 2025</title>
+</head>
+
+<body>
+    <h1>Piano Concertos 2025</h1>
+    <ul>
+        {% for day in days %}
+        <li>[{{day.date}}] {{ day.composer }}: {{ day.composition }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
