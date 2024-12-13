@@ -35,6 +35,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: main  # The branch where your site will be deployed
+        branch: gh-pages  # The branch where your site will be deployed
         folder: ./  # Folder to deploy (root folder if index.html is at the root)
         token: ${{ secrets.GITHUB_TOKEN }}  # Automatically provided by GitHub Actions
